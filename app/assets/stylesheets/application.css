@@ -1,15 +1,141 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.header{
+    background: url("/assets/Site/gameland.jpg") no-repeat center center fixed;
+    /*Photo by Dimitri Tyan on Unsplash*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*background-color:#b3200f;*/
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.header h1{
+    
+    
+color: #ffffff;
+background-color: rgba(100, 68, 100, 0.3);
+font-size: 80px;
+padding: 1em;
+    
+}
+.header li{
+    float: left;
+}
+.header li a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.header ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(100, 68, 100, 0.3);
+}
+.mainCont{
+    margin:auto;
+    width:80%;
+    border:solid 3px #b3200f;
+    text-align:center;
+    padding: 10px;
+}
+.welcomeIm{
+    width:30%;
+}
+.foot{
+    min-height:80px;
+   background: url("/assets/Site/gameland.jpg") no-repeat center center fixed;
+    /*Photo by Dimitri Tyan on Unsplash*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*background-color:#b3200f;*/
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+#itemsContainer {
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+
+#itemsContainer h1 {
+   display: block;
+    color: rgba(100, 68, 100, 0.8);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    
+}
+
+
+.itemhols {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 22%;
+    padding:10px;
+    min-height: 300px;
+   
+}
+
+
+.itemhols h1 {
+   display: block;
+    color: rgba(100, 68, 100, 0.8);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px
+    
+}
+
+
+.itemhols p {
+   display: block;
+    color: #4CAF50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+
+
+
+.itemholsIm {
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
+
+
+
+.button {
+    background-color: rgba(100, 68, 100, 0.7);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    min-width:5em;
+}
+
