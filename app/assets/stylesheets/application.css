@@ -1,29 +1,37 @@
-.header{
+/* General */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
     background: url("/assets/Site/gameland.jpg") no-repeat center center fixed;
-    /*Photo by Dimitri Tyan on Unsplash*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    /*background-color:#b3200f;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
     margin-bottom: 10px;
     overflow: auto;
 }
 
-.header h1{
-    
-    
-color: #ffffff;
-background-color: rgba(100, 68, 100, 0.3);
-font-size: 80px;
-padding: 1em;
-    
+.header h1 {
+    color: #ffffff;
+    background-color: rgba(100, 68, 100, 0.3);
+    font-size: 80px;
+    padding: 1em;
+    text-align: center;
 }
-.header li{
+
+.header li {
     float: left;
 }
-.header li a{
+
+.header li a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -31,30 +39,31 @@ padding: 1em;
     padding: 14px 16px;
 }
 
-.header ul{
+.header ul {
     list-style-type: none;
     overflow: hidden;
     background-color: rgba(100, 68, 100, 0.3);
 }
-.mainCont{
-    margin:auto;
-    width:80%;
-    border:solid 3px #b3200f;
-    text-align:center;
+
+.mainCont {
+    margin: auto;
+    width: 80%;
+    border: solid 3px #b3200f;
+    text-align: center;
     padding: 10px;
 }
-.welcomeIm{
-    width:30%;
+
+.welcomeIm {
+    width: 30%;
 }
-.foot{
-    min-height:80px;
-   background: url("/assets/Site/gameland.jpg") no-repeat center center fixed;
-    /*Photo by Dimitri Tyan on Unsplash*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    /*background-color:#b3200f;*/
+
+.foot {
+    min-height: 80px;
+    background: url("/assets/Site/gameland.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
     margin-bottom: 10px;
     overflow: auto;
@@ -63,19 +72,15 @@ padding: 1em;
 #itemsContainer {
     width: 100%;
     text-align: center;
-    
-    
 }
 
 
 #itemsContainer h1 {
-   display: block;
+    display: block;
     color: rgba(100, 68, 100, 0.8);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
-    
 }
 
 
@@ -85,45 +90,36 @@ padding: 1em;
     margin-bottom: 10px;
     display: inline-block;
     width: 22%;
-    padding:10px;
+    padding: 10px;
     min-height: 300px;
-   
 }
 
 
 .itemhols h1 {
-   display: block;
+    display: block;
     color: rgba(100, 68, 100, 0.8);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px
-    
 }
 
 
 .itemhols p {
-   display: block;
+    display: block;
     color: #4CAF50;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px
-    
 }
-
-
 
 .itemholsIm {
-    width: 30%; 
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    
 }
-
-
-
 
 .button {
     background-color: rgba(100, 68, 100, 0.7);
@@ -136,20 +132,13 @@ padding: 1em;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    min-width:5em;
+    min-width: 5em;
 }
 
 @media screen and (max-width: 600px) {
-   
-    .header h1{
 
-    font-size: 3em;
-    padding: 2em;
-    
+    .header h1 {
+        font-size: 3em;
+        padding: 2em;
     }
 }
-
-
-
-
-
