@@ -6,6 +6,20 @@ body {
     padding: 0;
 }
 
+.button {
+    background-color: rgba(238, 46, 36, 0.9);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    min-width: 5em;
+}
+
 /* Header */
 
 .header {
@@ -45,17 +59,7 @@ body {
     background-color: rgba(100, 68, 100, 0.3);
 }
 
-.mainCont {
-    margin: auto;
-    width: 80%;
-    border: solid 3px #b3200f;
-    text-align: center;
-    padding: 10px;
-}
-
-.welcomeIm {
-    width: 30%;
-}
+/* Footer */
 
 .foot {
     min-height: 80px;
@@ -69,70 +73,61 @@ body {
     overflow: auto;
 }
 
+
+.mainCont {
+    margin: auto;
+    width: 80%;
+    border: solid 3px #b3200f;
+    text-align: center;
+    padding: 10px;
+}
+
 #itemsContainer {
     width: 100%;
     text-align: center;
 }
 
-
-#itemsContainer h1 {
+h1 {
     display: block;
-    color: rgba(100, 68, 100, 0.8);
+    color: #010101;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 30px;
     text-decoration: none;
 }
 
+/* Item */
 
-.itemhols {
+.item {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
     display: inline-block;
-    width: 22%;
+    width: 30%;
     padding: 10px;
     min-height: 300px;
 }
 
-
-.itemhols h1 {
+.item h1 {
     display: block;
-    color: rgba(100, 68, 100, 0.8);
+    color: #010101;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px
+    font-size: 22px
 }
 
-
-.itemhols p {
+.item p {
     display: block;
-    color: #4CAF50;
+    color: #333;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px
+    font-size: 18px
 }
 
-.itemholsIm {
-    width: 30%;
+.itemImage {
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-.button {
-    background-color: rgba(100, 68, 100, 0.7);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    min-width: 5em;
 }
 
 @media screen and (max-width: 600px) {
