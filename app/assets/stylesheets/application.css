@@ -4,10 +4,11 @@ html,
 body {
     margin: 0;
     padding: 0;
+     background-color: rgba(100, 68, 100, 0.1)
 }
 
 .button {
-    background-color: rgba(238, 46, 36, 0.9);
+    background-color: rgba(100, 68, 100, 0.7);
     border: none;
     color: white;
     padding: 10px 10px;
@@ -62,14 +63,14 @@ body {
 /* Footer */
 
 .foot {
-    min-height: 80px;
+    min-height: 4em;
     background: url("/assets/Site/gameland.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0em;
     overflow: auto;
 }
 
@@ -128,6 +129,68 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+
+
+#itemsContainer h2 {
+   display: block;
+    color: #555;
+    text-align: justify;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px
+    
+}
+
+
+.itemhols p {
+   display: block;
+    color: #4CAF50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+
+
+
+.itemholsIm {
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
+
+
+
+
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: rgba(100, 68, 100, 0.2);
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: rgba(100, 68, 100, 0.1);}
+
+#customers tr:hover {background-color:rgba(100, 68, 100, 0.3);}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(100, 68, 100, 0.9);
+    color: white;
 }
 
 @media screen and (max-width: 600px) {
