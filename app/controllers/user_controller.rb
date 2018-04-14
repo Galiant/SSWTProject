@@ -4,6 +4,7 @@ class UserController < ApplicationController
         session[:login] = 1
         flash[:notice] = "you are logged in"
         redirect_to :controller => :items
+        #session[:cart] = nil
     end
     def logout
         #in case things go crazy and impossible to understand uncomment the line below and logout /login 
