@@ -10,11 +10,11 @@
         <%= link_to (image_tag item.image_url, :class => "itemImage"), item %>
         
         <p>
-          <%= item.console %>
+         Console: <%= item.console %>
           <br>
-          <%= item.brand %>
+         Brand: <%= item.brand %>
           <br>
-          <%= item.genre %>
+         Genre: <%= item.genre %>
         </p>
         
         <p><%= item.description %></p>
@@ -24,8 +24,14 @@
         <p>
           <a href = "/cart/<%= item.id %>" class = "button">Add to cart</a>
         <%= link_to 'Show', item, :class => "button", :role => "button" %>
+        
+        <% if user_signed_in? %>
         <%= link_to 'Edit', edit_item_path(item), :class => "button", :role => "button" %>
         <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button", :role => "button" %></td>
+        <% end %>
+        
+        
+        
         </p>
       </div>
     <% end %>

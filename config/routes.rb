@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   get 'cart/index'
  
 
@@ -16,8 +17,13 @@ Rails.application.routes.draw do
   get '/logout', to: 'user#logout'
   
    get '/cart', to: 'cart#index'
+   get '/cart/clear', to: 'cart#clearCart'
    get '/cart/:id', to: 'cart#add'
    get '/cart/remove/:id', to: 'cart#remove'
+   
+   root :to => 'site#home'
+   
+   
   
    
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
