@@ -21,6 +21,26 @@ body {
     min-width: 5em;
 }
 
+.icon{
+    width:5em;
+}
+.iconsdiv{
+      width:200px;
+      text-align:center;
+      display:block;
+      background-color: transparent;
+      border: 1px solid transparent;
+      margin-right: 10px;
+      margin-bottom: 1px;
+      float:left;
+    padding:2em;
+
+}
+#freeIconsCredits{
+   color:grey;
+   font-size: 0.4em;
+}
+
 /* Header */
 
 .header {

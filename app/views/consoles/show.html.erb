@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @console.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @console.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @console.image %>
+</p>
+
+<%= link_to 'Edit', edit_console_path(@console) %> |
+<%= link_to 'Back', consoles_path %>

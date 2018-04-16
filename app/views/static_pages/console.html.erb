@@ -1,0 +1,26 @@
+<div class = "itemsContainer">
+    
+    <h1>You looked for <%= @consoleName %></h1>
+    
+    
+    <% if @items.length ==0 %>
+    <h2>no items</h2>
+    <% end %>
+    
+    
+    
+    <% @items.each do |item| %>
+    
+    <div class = "itemhols">
+        
+        <h1><%=  item.title %></h1>
+        
+        
+        
+        
+        <%= image_tag item.image_url, :class=>"itemholsIm" %>
+    
+        
+    </div>
+    <% end %>
+</div>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :consoles
+  resources :genres
   devise_for :users
   get 'cart/index'
  
@@ -22,6 +24,9 @@ Rails.application.routes.draw do
    get '/cart/remove/:id', to: 'cart#remove'
    
    root :to => 'site#home'
+   
+   get 'genre/:title', to:'static_pages#genre'
+   get 'console/:title', to:'static_pages#console'
    
    
   
