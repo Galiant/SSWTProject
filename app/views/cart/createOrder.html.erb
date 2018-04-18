@@ -1,0 +1,67 @@
+<div id= "itemsContainer">
+
+
+
+
+
+</div>
+
+<table = "customers">
+    <tr>
+
+            <% @orders.limit(1).order(id: :desc).each do |order| %>
+            <td>
+                
+                <h2>Order reference: <%= order.id %></h2>
+                
+            </td>
+            
+            <% end %>
+        
+    </tr>
+
+    
+</table>
+
+<table id = "customers">
+    
+    <% @total = 0 %>
+    <% @orderitems.each do |id, quantity| %>
+        <tr>
+            
+            <% item = Orderitem.find_by_id(id) %>
+            <td><%= item.title %></td>
+            <td><%= item.quantity %></td>
+            <td><%= number_to_currency(item.price, :unit => "€") %></td>
+            <td><%= number_to_currency(item.quantity * item.price, :unit => "€") %></td>
+        </tr>
+        
+        
+        <% timx = (item.quantity * item.price) %>
+        <% @total += timx %>
+        
+
+        
+        
+    
+    <% end %>
+            <tr>
+            
+            
+            <td>Order Total: <%= @total %></td>
+        </tr>
+    
+<% shipping = 10 %>
+<% @overall = shipping + @total %>
+
+<tr>
+    <td>Shipping &euro; 10</td>
+    
+</tr>
+<tr>
+    <td>You pay: &euro; <%= @overall %></td>
+    
+</tr>
+    
+    
+</table>

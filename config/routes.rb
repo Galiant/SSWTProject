@@ -1,12 +1,34 @@
 Rails.application.routes.draw do
   
+  get 'orderitems/index'
+
+  get 'orderitems/show'
+
+  get 'orderitems/new'
+
+  get 'orderitems/edit'
+
+  resources :orders do
+      resources:orderitems
+  end
+  
   resources :consoles
   resources :genres
-  devise_for :users
+  
+  
+  devise_for :users do
+      
+      resources:orders
+end
+    
+    
+get '/checkout' , to: 'cart#createOrder'
+    
   get 'cart/index'
  
 
   resources :items
+  
   root 'static_pages#home'
 
   get 'static_pages/home'
