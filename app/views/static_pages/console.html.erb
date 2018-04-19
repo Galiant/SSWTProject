@@ -1,6 +1,6 @@
 <div class = "itemsContainer">
     
-    <h1>You looked for <%= @consoleName %></h1>
+    <h1>Showing: <%= @consoleName %></h1>
     
     
     <% if @items.length ==0 %>
@@ -8,17 +8,28 @@
     <% end %>
     
     
-    
     <% @items.each do |item| %>
     
-    <div class = "itemhols">
+    <div class = "item">
         
         <h1><%=  item.title %></h1>
+
+        <%= image_tag item.image_url, :class=>"itemImage" %>
+        <p>
+         Console: <%= item.console %>
+          <br>
+         Brand: <%= item.brand %>
+          <br>
+         Genre: <%= item.genre %>
+        </p>
         
+        <p><%= item.description %></p>
         
-        
-        
-        <%= image_tag item.image_url, :class=>"itemholsIm" %>
+        <p><%= item.price %></p>
+
+        <p>
+          <a href = "/cart/<%= item.id %>" class = "button">Add to cart</a>
+        <%= link_to 'Show', item, :class => "button", :role => "button" %>
     
         
     </div>

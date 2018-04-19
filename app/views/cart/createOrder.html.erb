@@ -48,18 +48,18 @@
             <tr>
             
             
-            <td>Order Total: <%= @total %></td>
+            <td colspan="4">Order Total: <%= @total %></td>
         </tr>
     
 <% shipping = 10 %>
 <% @overall = shipping + @total %>
 
 <tr>
-    <td>Shipping &euro; 10</td>
+    <td  colspan="4">Shipping &euro; 10</td>
     
 </tr>
 <tr>
-    <td>You pay: &euro; <%= @overall %></td>
+    <td colspan="4">You pay: &euro; <%= @overall %></td>
     
 </tr>
     

@@ -4,7 +4,16 @@ html,
 body {
     margin: 0;
     padding: 0;
-     background-color: rgba(100, 68, 100, 0.1)
+     background-color: rgba(100, 68, 100, 0.1);
+
+}
+
+.mainCont {
+    margin: auto;
+    width: 100%;
+    border: solid 3px #b3200f;
+    text-align: center;
+    padding: 10px;
 }
 
 .button {
@@ -40,6 +49,11 @@ body {
 #freeIconsCredits{
    color:grey;
    font-size: 0.4em;
+    position:fixed;
+    width:80%;
+    left:10%;
+    bottom:1%;
+   
 }
 
 /* Header */
@@ -96,13 +110,7 @@ body {
 }
 
 
-.mainCont {
-    margin: auto;
-    width: 80%;
-    border: solid 3px #b3200f;
-    text-align: center;
-    padding: 10px;
-}
+
 
 #itemsContainer {
     width: 100%;
