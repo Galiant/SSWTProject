@@ -8,6 +8,7 @@ class ItemsController < ApplicationController
   end
   
   def search
+    @search_term = params[:q]
     st = "%#{params[:q]}%"
     @items = Item.where("title like ?", st)
   end

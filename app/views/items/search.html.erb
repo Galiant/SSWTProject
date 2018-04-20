@@ -1,7 +1,13 @@
 <p id="notice"><%= notice %></p>
 <div id="itemsContainer">
 
-<h1>Games</h1>
+<h1>You search our product catalog for: <%= @search_term %></h1>
+
+<% if @items.length == 0  %>
+  <br />
+  <h1>No products were found to match your search</h1>
+<% end %>
+
 
     <% @items.each do |item| %>
       <div class="item">
