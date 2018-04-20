@@ -23,6 +23,7 @@ end
     
     
 get '/checkout' , to: 'cart#createOrder'
+ get '/paid', to: 'static_pages#paid'
     
   get 'cart/index'
  

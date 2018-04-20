@@ -11,6 +11,14 @@ class StaticPagesController < ApplicationController
   def help
   end
   
+  def paid
+    flash[:notice] = "transaction complete"
+    @order = Order.last
+    @order.update_attribute(:status, "paid by user #{current_user.email}")
+    session[:cart] = nil 
+    
+  end
+  
   def console
     consoleName = params[:title]
     @consoleName = consoleName
