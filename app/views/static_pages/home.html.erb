@@ -1,15 +1,17 @@
 <% provide(:title, 'Home') %>
 
 <div class = "maincont">
-    
-    
- <%= render 'layouts/genres'   %>
  
-  <%= render 'layouts/consoles'   %>
+  <%= render 'layouts/genres' %>
+  <%= render 'layouts/consoles' %>
+  
+  <%= render 'layouts/iconscredit' %>
     
-    
- <%= render 'layouts/iconscredit'   %>
-    
+</div>
+
+<div class = "maincont">
+ <h2>Search</h2>
+  <%= render 'layouts/search' %>
 </div>
 
 
