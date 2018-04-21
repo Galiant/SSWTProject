@@ -1,12 +1,27 @@
     <footer class="foot">
         
-        <% if session[:login] == 1 %>
-        <%= link_to 'New Item', new_item_path,:class =>"button", :role=>"button"  %>
-         <%= link_to 'New Genre', new_genre_path,:class =>"button", :role=>"button"  %>
-          <%= link_to 'New Console', new_console_path,:class =>"button", :role=>"button"  %>
+        <% if user_signed_in? %>
+        
+          
+            <%  if current_user.admin? %>
+              
+              
+              <%= link_to 'New Item', new_item_path,:class =>"button", :role=>"button"  %>
+             <%= link_to 'New Genre', new_genre_path,:class =>"button", :role=>"button"  %>
+              <%= link_to 'New Console', new_console_path,:class =>"button", :role=>"button"  %>
+              
+              <%= link_to 'View orders', orders_path, :class => 'button', :role => 'button' %>
+              
+             <% else %>
+             
+             <li>other</li>
+              
+            <% end %>  
         
         <% end %>
         
-         <%= link_to 'View orders', orders_path, :class => 'button', :role => 'button' %>
+        
+        
+         
      
     </footer>
