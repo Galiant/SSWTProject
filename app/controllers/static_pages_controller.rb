@@ -31,4 +31,5 @@ class StaticPagesController < ApplicationController
      @items = Item.where("genre like ?", genreName)
     #@items= Item.all
   end
+  
 end
