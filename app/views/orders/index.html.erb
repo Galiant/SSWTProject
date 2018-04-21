@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<div class="mainCont orders">
+
 <h1>Orders</h1>
 
-<table>
+<table class="orders-table">
   <thead>
     <tr>
       <th>Order date</th>
@@ -18,9 +20,20 @@
         <td><%= order.order_date %></td>
         <td><%= order.user %></td>
         <td><%= order.status %></td>
-        <td><%= link_to 'Show', order %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
-        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        <% if user_signed_in? %>
+
+        <%  if current_user.admin? %>
+        
+          <td><%= link_to 'Show', order, :class => 'button', :role => 'button' %></td>
+          <td><%= link_to 'Edit', edit_order_path(order), :class => 'button', :role => 'button' %></td>
+          <td><%= link_to 'Destroy', order, :class => 'button', :role => 'button', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% else %>
+          <td><%= link_to 'Show', order, :class => 'button', :role => 'button' %></td>
+        
+        <% end %>
+        
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +41,6 @@
 
 <br>
 
-<%= link_to 'New Order', new_order_path %>
+<%= link_to 'New Order', new_order_path, :class => "button new-order", :role => "button" %>
+
+</div>

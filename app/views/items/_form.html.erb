@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title%>
     <%= form.text_field :title, id: :item_title %>
   </div>
 
@@ -46,7 +46,8 @@
     <%= form.text_field :image_url, id: :item_image_url %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions field">
+    <%= form.submit :class => 'button', :role => 'button'%>
   </div>
+  
 <% end %>

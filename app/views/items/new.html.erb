@@ -1,5 +1,9 @@
 <h1>New Item</h1>
 
+<div class="mainCont item-new">
+
 <%= render 'form', item: @item %>
 
-<%= link_to 'Back', items_path %>
+<%= link_to 'Back', items_path, :class => 'button', :role => 'button' %>
+
+</div>
