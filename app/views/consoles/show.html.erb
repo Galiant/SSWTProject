@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<div class="mainCont">
+
 <p>
   <strong>Title:</strong>
   <%= @console.title %>
@@ -15,5 +17,7 @@
   <%= @console.image %>
 </p>
 
-<%= link_to 'Edit', edit_console_path(@console), :class => "button", :role => "button" %> |
+<%= link_to 'Edit', edit_console_path(@console), :class => "button", :role => "button" %>
 <%= link_to 'Back', consoles_path, :class => "button", :role => "button" %>
+
+</div>
