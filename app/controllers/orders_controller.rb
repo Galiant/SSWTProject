@@ -5,8 +5,19 @@ class OrdersController < ApplicationController
   # GET /orders.json
   def index
        # filtering information according to current user
-        @user = User.find(current_user.id)
-    @orders = @user.orders.all
+       
+       @user = User.find(current_user.id)
+       
+       if @user.admin? 
+         
+         @orders = Order.all
+          
+        else  
+          
+        @orders = @user.orders.all
+          
+       end 
+        
     #@orders = Order.all
   end
 

@@ -2,15 +2,24 @@
       
       <div class="footer-buttons">
         
-        <% if session[:login] == 1 %>
-        <%= link_to 'New Item', new_item_path,:class =>"button", :role=>"button"  %>
-         <%= link_to 'New Genre', new_genre_path,:class =>"button", :role=>"button"  %>
-          <%= link_to 'New Console', new_console_path,:class =>"button", :role=>"button"  %>
-        
-        <% end %>
-        
         <% if user_signed_in? %>
-         <%= link_to 'View orders', orders_path, :class => 'button', :role => 'button' %>
+        
+          
+            <%  if current_user.admin? %>
+              
+              
+              <%= link_to 'New Item', new_item_path,:class =>"button", :role=>"button"  %>
+             <%= link_to 'New Genre', new_genre_path,:class =>"button", :role=>"button"  %>
+              <%= link_to 'New Console', new_console_path,:class =>"button", :role=>"button"  %>
+              
+              <%= link_to 'View orders', orders_path, :class => 'button', :role => 'button' %>
+              
+             <% else %>
+             
+             <li>other</li>
+              
+            <% end %>  
+        
         <% end %>
     </div>
     <hr>
