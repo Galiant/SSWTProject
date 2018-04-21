@@ -1,5 +1,9 @@
 <h1>New Genre</h1>
 
+<div class="mainCont item-new">
+
 <%= render 'form', genre: @genre %>
 
-<%= link_to 'Back', genres_path %>
+<%= link_to 'Back', genres_path, :class =>"button", :role=>"button" %>
+
+</div>
