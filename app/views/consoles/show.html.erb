@@ -17,7 +17,15 @@
   <%= @console.image %>
 </p>
 
+<% if user_signed_in? %>
+ <%  if current_user.admin? %>
 <%= link_to 'Edit', edit_console_path(@console), :class => "button", :role => "button" %>
 <%= link_to 'Back', consoles_path, :class => "button", :role => "button" %>
+<% else %>
+<%= link_to 'Back', consoles_path, :class => "button", :role => "button" %>
+<% end %>
+<% else %>
+<%= link_to 'Back', consoles_path, :class => "button", :role => "button" %>
+<% end %>
 
 </div>

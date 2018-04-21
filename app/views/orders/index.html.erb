@@ -25,11 +25,11 @@
 
         <%  if current_user.admin? %>
         
-          <td><%= link_to 'Show', order, :class => 'button', :role => 'button' %></td>
+          <td><%= link_to 'Details', order, :class => 'button', :role => 'button' %></td>
           <td><%= link_to 'Edit', edit_order_path(order), :class => 'button', :role => 'button' %></td>
           <td><%= link_to 'Destroy', order, :class => 'button', :role => 'button', method: :delete, data: { confirm: 'Are you sure?' } %></td>
           <% else %>
-          <td><%= link_to 'Show', order, :class => 'button', :role => 'button' %></td>
+          <td><%= link_to 'Details', order, :class => 'button', :role => 'button' %></td>
         
         <% end %>
         
@@ -37,7 +37,11 @@
       </tr>
     <% end %>
     <tr>
+      <% if user_signed_in? %>
+      <%  if current_user.admin? %>
       <td><%= link_to 'New Order', new_order_path, :class => "button new-order", :role => "button" %></td>
+      <% end %>
+      <% end %>
     </tr>
   </tbody>
 </table>

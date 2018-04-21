@@ -20,13 +20,25 @@
         <td><%= genre.title %></td>
         <td><%= genre.description %></td>
         <td><%= genre.image %></td>
-        <td><%= link_to 'Show', genre, :class => "button", :role => "button"  %></td>
+        <% if user_signed_in? %>
+         <%  if current_user.admin? %>
+        <td><%= link_to 'Details', genre, :class => "button", :role => "button"  %></td>
         <td><%= link_to 'Edit', edit_genre_path(genre), :class => "button", :role => "button"  %></td>
         <td><%= link_to 'Destroy', genre, :class => "button", :role => "button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+        <td><%= link_to 'Details', genre, :class => "button", :role => "button"  %></td>
+        <% end %>
+        <% else %>
+        <td><%= link_to 'Details', genre, :class => "button", :role => "button"  %></td>
+        <% end %>
       </tr>
     <% end %>
     <tr>
+      <% if user_signed_in? %>
+      <%  if current_user.admin? %>
       <td><%= link_to 'New Genre', new_genre_path, :class => "button", :role => "button"  %></td>
+      <% end %>
+      <% end %>
     </tr>
   </tbody>
 </table>
