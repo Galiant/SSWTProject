@@ -7,6 +7,10 @@
         
         <% end %>
         
+        <% if user_signed_in? %>
          <%= link_to 'View orders', orders_path, :class => 'button', :role => 'button' %>
+        <% end %>
+         
+          <%= render 'layouts/iconscredit' %>
      
     </footer>
