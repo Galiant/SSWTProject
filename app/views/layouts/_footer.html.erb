@@ -1,4 +1,6 @@
     <footer class="foot">
+      
+      <div class="footer-buttons">
         
         <% if session[:login] == 1 %>
         <%= link_to 'New Item', new_item_path,:class =>"button", :role=>"button"  %>
@@ -10,7 +12,9 @@
         <% if user_signed_in? %>
          <%= link_to 'View orders', orders_path, :class => 'button', :role => 'button' %>
         <% end %>
-         
-          <%= render 'layouts/iconscredit' %>
-     
+    </div>
+    <hr>
+    <div class="team">SSWT Project - made by Isabelle Bidou, Robert Gaughan and Antonijo Galic</div>
+    <hr>
+    <div class="credit"><%= render 'layouts/iconscredit' %></div>
     </footer>

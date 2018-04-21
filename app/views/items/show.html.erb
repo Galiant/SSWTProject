@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<div class="mainCont details">
+
 <p>
   <strong>Title:</strong>
   <%= @item.title %>
@@ -27,7 +29,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @item.price %>
+  € <%= @item.price %>
 </p>
 
 <p>
@@ -35,5 +37,9 @@
   <%= @item.image_url %>
 </p>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<% if session[:login] == 1 %>
+<%= link_to 'Edit', edit_item_path(@item), :class => "button", :role => "button" %>
+<% end %>
+<%= link_to 'Back', items_path, :class => "button", :role => "button" %>
+
+</div>
