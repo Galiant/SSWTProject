@@ -1,24 +1,27 @@
 /* General */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 html,
 body {
     margin: 0;
     padding: 0;
-     background-color: rgba(100, 68, 100, 0.1);
-
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(100, 68, 100, 0.1);
 }
 
 .mainCont {
-    margin: auto;
-    width: 100%;
-    border: solid 3px #b3200f;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
     text-align: center;
-    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .button {
     background-color: rgba(100, 68, 100, 0.7);
-    border: none;
+    border: 1px solid rgba(100, 68, 100, 0.7);
     color: white;
     padding: 10px 10px;
     text-align: center;
@@ -29,7 +32,13 @@ body {
     cursor: pointer;
     min-width: 5em;
 }
-
+.button:hover {
+    background-color: white;
+    border: 1px solid rgb(100, 68, 100);
+    color: rgb(100, 68, 100);
+    text-decoration: none;
+    min-width: 5em;
+  
 .buttonfull {
     background-color: rgb(222, 62, 62);
     border: none;
@@ -65,26 +74,24 @@ body {
     width:5em;
     opacity: 0.5;
 }
-.iconsdiv{
-      width:200px;
-      text-align:center;
-      display:block;
-      background-color: transparent;
-      border: 1px solid transparent;
-      margin-right: 10px;
-      margin-bottom: 1px;
-      float:left;
-    padding:2em;
 
+
+.icon {
+    width: 5em;
+    opacity: 0.5;
 }
-#freeIconsCredits{
-   color:grey;
-   font-size: 0.4em;
-    position:fixed;
-    width:80%;
-    left:10%;
-    bottom:1%;
-   
+
+.iconsdiv {
+    width: 23%;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 0;
+    margin-bottom: 1px;
+    float: left;
+    padding: 2em;
+    padding-left: 0;
 }
 
 /* Header */
@@ -129,7 +136,7 @@ body {
 /* Footer */
 
 .foot {
-    min-height: 4em;
+    min-height: 100px;
     background: url("/assets/Site/gameland.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -140,8 +147,59 @@ body {
     overflow: auto;
 }
 
+.footer-buttons {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
 
+.team {
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
 
+#freeIconsCredits {
+    color: grey;
+    font-size: 0.4em;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.credit {
+    text-align: center;
+}
+
+/* Home */
+
+.search {
+    padding-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1024px) {
+    .iconsdiv {
+        width: 21%;
+    }
+}
+
+/* Details(Show)*/
+
+.details {
+    text-align: left;
+    padding: 2%;
+    padding-top: .5%;
+    font-size: 18px;
+}
+
+/* Games(Items)*/
 
 #itemsContainer {
     width: 100%;
@@ -155,8 +213,6 @@ h1 {
     padding-top: 30px;
     text-decoration: none;
 }
-
-/* Item */
 
 .item {
     margin-left: auto;
@@ -191,37 +247,33 @@ h1 {
     display: block;
 }
 
-
-
 #itemsContainer h2 {
-   display: block;
+    display: block;
     color: #555;
     text-align: justify;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px
-    
 }
 
 
 .itemhols p {
-   display: block;
+    display: block;
     color: #4CAF50;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px
-    
 }
 
 
 
 .itemholsIm {
-    width: 30%; 
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    
+
 }
 
 
@@ -236,14 +288,19 @@ h1 {
     width: 100%;
 }
 
-#customers td, #customers th {
+#customers td,
+#customers th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: rgba(100, 68, 100, 0.1);}
+#customers tr:nth-child(even) {
+    background-color: rgba(100, 68, 100, 0.1);
+}
 
-#customers tr:hover {background-color:rgba(100, 68, 100, 0.3);}
+#customers tr:hover {
+    background-color: rgba(100, 68, 100, 0.3);
+}
 
 #customers th {
     padding-top: 12px;
