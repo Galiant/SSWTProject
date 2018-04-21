@@ -4,8 +4,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-     background-color: rgba(100, 68, 100, 0.1);
-
+    background-color: rgba(100, 68, 100, 0.1);
 }
 
 .mainCont {
@@ -30,30 +29,32 @@ body {
     min-width: 5em;
 }
 
-.icon{
-    width:5em;
+.icon {
+    width: 5em;
     opacity: 0.5;
 }
-.iconsdiv{
-      width:200px;
-      text-align:center;
-      display:block;
-      background-color: transparent;
-      border: 1px solid transparent;
-      margin-right: 10px;
-      margin-bottom: 1px;
-      float:left;
-    padding:2em;
+
+.iconsdiv {
+    width: 200px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    float: left;
+    padding: 2em;
 
 }
-#freeIconsCredits{
-   color:grey;
-   font-size: 0.4em;
-    position:fixed;
-    width:80%;
-    left:10%;
-    bottom:1%;
-   
+
+#freeIconsCredits {
+    color: grey;
+    font-size: 0.4em;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    bottom: 1%;
+
 }
 
 /* Header */
@@ -163,34 +164,32 @@ h1 {
 
 
 #itemsContainer h2 {
-   display: block;
+    display: block;
     color: #555;
     text-align: justify;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px
-    
 }
 
 
 .itemhols p {
-   display: block;
+    display: block;
     color: #4CAF50;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px
-    
 }
 
 
 
 .itemholsIm {
-    width: 30%; 
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    
+
 }
 
 
@@ -205,14 +204,19 @@ h1 {
     width: 100%;
 }
 
-#customers td, #customers th {
+#customers td,
+#customers th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: rgba(100, 68, 100, 0.1);}
+#customers tr:nth-child(even) {
+    background-color: rgba(100, 68, 100, 0.1);
+}
 
-#customers tr:hover {background-color:rgba(100, 68, 100, 0.3);}
+#customers tr:hover {
+    background-color: rgba(100, 68, 100, 0.3);
+}
 
 #customers th {
     padding-top: 12px;

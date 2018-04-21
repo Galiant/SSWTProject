@@ -13,3 +13,10 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery3
+//= require jquery_ujs
+
+document.addEventListener("turbolinks:load", function() {
+  // whatever you want to make sure is loaded on each page
+
+})
