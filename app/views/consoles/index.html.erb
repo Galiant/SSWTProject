@@ -18,9 +18,9 @@
         <td><%= console.title %></td>
         <td><%= console.description %></td>
         <td><%= console.image %></td>
-        <td><%= link_to 'Show', console %></td>
-        <td><%= link_to 'Edit', edit_console_path(console) %></td>
-        <td><%= link_to 'Destroy', console, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', console, :class => "button", :role => "button" %></td>
+        <td><%= link_to 'Edit', edit_console_path(console), :class => "button", :role => "button" %></td>
+        <td><%= link_to 'Destroy', console, :class => "button", :role => "button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

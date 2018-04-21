@@ -20,16 +20,22 @@
           € <%= item.price %></p>
 
         <p>
+        
+         <% if user_signed_in? %>
+         <%  if current_user.admin? %>
           <a href = "/cart/<%= item.id %>" class = "button">Add to cart</a>
-        <%= link_to 'Details', item, :class => "button", :role => "button" %>
-        
-        <% if session[:login] == 1 %> 
-        <%= link_to 'Edit', edit_item_path(item), :class => "button", :role => "button" %>
-        <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button", :role => "button" %>
+          <%= link_to 'Details', item, :class => "button", :role => "button" %>
+          <%= link_to 'Edit', edit_item_path(item), :class => "button", :role => "button" %>
+          <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button", :role => "button" %>
+        <% else %>
+          <a href = "/cart/<%= item.id %>" class = "button">Add to cart</a>
+          <%= link_to 'Details', item, :class => "button", :role => "button" %>
         <% end %>
-        
-        
-        
+        <% else %>
+          <a href = "/cart/<%= item.id %>" class = "button">Add to cart</a>
+          <%= link_to 'Details', item, :class => "button", :role => "button" %>
+        <% end %>
+
         </p>
         </div>
     <% end %>
