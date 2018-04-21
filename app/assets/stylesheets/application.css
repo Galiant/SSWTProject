@@ -20,8 +20,8 @@ body {
 }
 
 .button {
-    background-color: rgba(100, 68, 100, 0.7);
-    border: 1px solid rgba(100, 68, 100, 0.7);
+    background-color: rgb(222, 62, 62);
+    border: none;
     color: white;
     padding: 10px 10px;
     text-align: center;
@@ -34,9 +34,9 @@ body {
 }
 
 .button:hover {
-    background-color: white;
-    border: 1px solid rgb(100, 68, 100);
-    color: rgb(100, 68, 100);
+    background-color: #000;
+    border: none;
+    color: white;
     text-decoration: none;
     min-width: 5em;
 }
@@ -94,6 +94,10 @@ body {
     float: left;
     padding: 2em;
     padding-left: 0;
+}
+
+#notice {
+    padding-left: 2%;
 }
 
 /* Header */
@@ -268,8 +272,6 @@ h1 {
     font-size: 16px
 }
 
-
-
 .itemholsIm {
     width: 30%;
     margin-left: auto;
@@ -278,9 +280,54 @@ h1 {
 
 }
 
+.item-new {
+    text-align: left;
+    padding: 1% 2%;
+}
 
 
+/* Devise */
 
+.devise-new {
+    text-align: left;
+    padding: 1% 2%;
+}
+
+.field {
+    margin-top: .8%;
+}
+
+.actions {
+    margin-top: .8%;
+    margin-bottom: .8%;
+}
+
+/* Orders */
+
+.orders {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.orders-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.new-order {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .orders-table {
+        width: 100%;
+    }
+}
 
 
 #customers {

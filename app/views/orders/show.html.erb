@@ -8,9 +8,9 @@
     
     <tr>
       
-      <td>order date</td>
-      <td>order by</td>
-      <td>order statuse</td>
+      <td><h4>Order date</h4></td>
+      <td><h4>Order by</h4></td>
+      <td><h4>Order status</h4></td>
     </tr>
     
     
@@ -22,9 +22,17 @@
     </tr>
        
     <tr>
+      
+      <% if user_signed_in? %>
+
+            <%  if current_user.admin? %>
 
       <td><%= link_to 'Edit Order', edit_order_path(@order), :class =>"button" %></td>
       <td><%= link_to 'Back to  Orders', orders_path, :class =>"button" %></td>
+        <% else %>
+      <td><%= link_to 'Back to  Orders', orders_path, :class =>"button" %></td>
+      <% end %>
+      <% end %>
     </tr>
   </table>
   
@@ -39,7 +47,7 @@
     <tr>
       
       <td><%= orderitem.title %></td>
-         <td>qty ordered: <%= orderitem.quantity %></td>
+         <td>Quantity ordered: <%= orderitem.quantity %></td>
     </tr>
     <% end %>
     
