@@ -30,6 +30,37 @@ body {
     min-width: 5em;
 }
 
+.buttonfull {
+    background-color: rgb(222, 62, 62);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    min-width: 5em;
+    width: 100%;
+}
+
+.buttonfull:hover {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    min-width: 5em;
+    width: 100%;
+}
+
+
 .icon{
     width:5em;
     opacity: 0.5;
@@ -228,4 +259,9 @@ h1 {
         font-size: 3em;
         padding: 2em;
     }
+}
+.bodyback {
+    background: url("logo-back.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
