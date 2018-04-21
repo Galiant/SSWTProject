@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<div class="mainCont consoles">
+
 <h1>Genres</h1>
 
-<table>
+<table class="consoles-table">
   <thead>
     <tr>
       <th>Title</th>
@@ -18,14 +20,15 @@
         <td><%= genre.title %></td>
         <td><%= genre.description %></td>
         <td><%= genre.image %></td>
-        <td><%= link_to 'Show', genre %></td>
-        <td><%= link_to 'Edit', edit_genre_path(genre) %></td>
-        <td><%= link_to 'Destroy', genre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', genre, :class => "button", :role => "button"  %></td>
+        <td><%= link_to 'Edit', edit_genre_path(genre), :class => "button", :role => "button"  %></td>
+        <td><%= link_to 'Destroy', genre, :class => "button", :role => "button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+    <tr>
+      <td><%= link_to 'New Genre', new_genre_path, :class => "button", :role => "button"  %></td>
+    </tr>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Genre', new_genre_path %>
+</div>

@@ -302,15 +302,17 @@ h1 {
     margin-bottom: .8%;
 }
 
-/* Orders */
+/* Orders  and Consoles*/
 
-.orders {
+.orders,
+.consoles {
     text-align: left;
     margin-right: auto;
     margin-left: auto;
 }
 
-.orders-table {
+.orders-table,
+.consoles-table {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -329,6 +331,7 @@ h1 {
     }
 }
 
+/* Cart and Checkout */
 
 #customers {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

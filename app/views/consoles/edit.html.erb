@@ -1,6 +1,10 @@
 <h1>Editing Console</h1>
 
+<div class="mainCont">
+
 <%= render 'form', console: @console %>
 
-<%= link_to 'Show', @console %> |
-<%= link_to 'Back', consoles_path %>
+<%= link_to 'Show', @console, :class => "button", :role => "button"  %>
+<%= link_to 'Back', consoles_path, :class => "button", :role => "button"  %>
+
+</div>
