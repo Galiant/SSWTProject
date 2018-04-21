@@ -21,10 +21,14 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     @item = Item.new
+    @consoles = Console.all
+    @genres = Genre.all
   end
 
   # GET /items/1/edit
   def edit
+    @consoles = Console.all
+    @genres = Genre.all
   end
 
   # POST /items

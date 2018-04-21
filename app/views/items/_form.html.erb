@@ -18,7 +18,14 @@
 
   <div class="field">
     <%= form.label :console %>
-    <%= form.text_field :console, id: :item_console %>
+    
+     <select>
+    <% @consoles.each do |console| %>
+      <option value="<%= :item_console %>"><%= console.title %></option>
+     
+     <% end %>
+     </select>
+    
   </div>
 
   <div class="field">
@@ -28,7 +35,13 @@
 
   <div class="field">
     <%= form.label :genre %>
-    <%= form.text_field :genre, id: :item_genre %>
+    <select>
+    <% @genres.each do |genre| %>
+      <option value="<%= :item_genre %>"><%= genre.title %></option>
+     
+     <% end %>
+     </select>
+    
   </div>
 
   <div class="field">
