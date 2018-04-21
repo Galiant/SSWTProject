@@ -32,13 +32,15 @@ body {
     cursor: pointer;
     min-width: 5em;
 }
+
 .button:hover {
     background-color: white;
     border: 1px solid rgb(100, 68, 100);
     color: rgb(100, 68, 100);
     text-decoration: none;
     min-width: 5em;
-  
+}
+
 .buttonfull {
     background-color: rgb(222, 62, 62);
     border: none;
@@ -70,8 +72,8 @@ body {
 }
 
 
-.icon{
-    width:5em;
+.icon {
+    width: 5em;
     opacity: 0.5;
 }
 
@@ -317,6 +319,7 @@ h1 {
         padding: 2em;
     }
 }
+
 .bodyback {
     background: url("logo-back.png");
     background-repeat: no-repeat;
