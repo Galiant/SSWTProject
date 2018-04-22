@@ -180,7 +180,6 @@ body {
 .icon {
     width: 5em;
     opacity: 0.9;
-    padding-left: 2em;
 }
 
 .iconsdiv {
@@ -203,8 +202,22 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
+    .icon {
+        padding-left: 1.5em;
+    }
+
     .iconsdiv {
         width: 22%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .icon {
+        padding-left: 3.2em;
+    }
+
+    .iconsdiv {
+        width: 20%;
     }
 }
 
@@ -263,6 +276,12 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .item {
+        width: 80%;
+    }
 }
 
 #itemsContainer h2 {
