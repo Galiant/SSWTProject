@@ -19,4 +19,27 @@
 document.addEventListener("turbolinks:load", function() {
   // whatever you want to make sure is loaded on each page
 
+  // Footer fix
+  // function to set the height on fly
+  function autoHeight() {
+    $('.mainCont').css('min-height', 0);
+    $('.mainCont').css('min-height', (
+      $(document).height() -
+      $('.header').height() -
+      $('.foot').height()
+    ));
+  }
+
+  // onDocumentReady function bind
+  $(document).ready(function() {
+    autoHeight();
+  });
+
+  // onResize bind of the function
+  $(window).resize(function() {
+    autoHeight();
+  });
+
+  // End Footer fix
+
 })

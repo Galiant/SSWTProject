@@ -17,6 +17,7 @@ body {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+    min-height: 100%;
 }
 
 .button {
@@ -71,25 +72,6 @@ body {
     width: 100%;
 }
 
-
-.icon {
-    width: 5em;
-    opacity: 0.5;
-}
-
-.iconsdiv {
-    width: 23%;
-    text-align: center;
-    display: block;
-    background-color: transparent;
-    border: 1px solid transparent;
-    margin-right: 0;
-    margin-bottom: 1px;
-    float: left;
-    padding: 2em;
-    padding-left: 0;
-}
-
 #notice {
     padding-left: 2%;
 }
@@ -115,6 +97,12 @@ body {
     text-align: center;
 }
 
+.header ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .9);
+}
+
 .header li {
     float: left;
 }
@@ -127,10 +115,15 @@ body {
     padding: 14px 16px;
 }
 
-.header ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: rgba(100, 68, 100, 0.3);
+.header li a:hover {
+    color: rgb(222, 62, 62);
+}
+
+.isAdminLi {
+    color: red;
+    padding-top: 13px;
+    font-size: 18px;
+    margin-left: 20px;
 }
 
 /* Footer */
@@ -143,8 +136,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    margin-bottom: 0em;
-    overflow: auto;
+    overflow: hidden;
+    bottom: 0;
 }
 
 .footer-buttons {
@@ -161,7 +154,7 @@ body {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
-    color: black;
+    color: white;
 }
 
 #freeIconsCredits {
@@ -184,9 +177,34 @@ body {
     text-align: right;
 }
 
-@media only screen and (max-width: 1024px) {
+.icon {
+    width: 5em;
+    opacity: 0.9;
+    padding-left: 2em;
+}
+
+.iconsdiv {
+    width: 23%;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 0;
+    margin-bottom: 1px;
+    float: left;
+    padding: 2em;
+    padding-left: 0;
+}
+
+.home-catButton {
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 1440px) {
     .iconsdiv {
-        width: 21%;
+        width: 22%;
     }
 }
 

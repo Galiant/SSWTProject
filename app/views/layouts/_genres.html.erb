@@ -1,17 +1,11 @@
 
 
  <% @genres.each do |genre| %>
- <div class="mainCont">
- 
- <div class = "iconsdiv">
-     
-    
+    <div class="iconsdiv">
         
        <%= image_tag genre.image, :class=>"icon" %>
-        <p><a href="/genre/<%= genre.title %>" class="button"><%= genre.title %></a></p>
-        
+       <p class="home-catButton"><a href="/genre/<%= genre.title %>" class="button"><%= genre.title %></a></p>
         
         </div>
- </div>
     <% end %>
     
