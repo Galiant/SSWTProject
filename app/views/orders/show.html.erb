@@ -16,7 +16,7 @@
     
     <tr>
       
-      <td> <%= @order.order_date %></td>
+      <td> <%= @order.order_date.strftime("%d-%m-%Y at %H:%M:%S UTC") %></td>
       <td><%= @order.user.username %></td>
       <td> <%= @order.status %></td>
     </tr>
