@@ -2,17 +2,15 @@
 
 
  <% @consoles.each do |console| %>
- <div class="mainCont">
- <div class = "iconsdiv">
      
+     <div class="iconsdiv">
      
      <%= image_tag console.image, :class=>"icon" %>
         
 
-        <p><a href="/console/<%= console.title %>" class="button"><%= console.title %></a></p>
+        <p class="home-catButton"><a href="/console/<%= console.title %>" class="button"><%= console.title %></a></p>
         
         </div>
-        </div> 
     <% end %>
  
     
