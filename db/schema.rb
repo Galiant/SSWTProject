@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20180422000125) do
     t.bigint "item_id"
     t.string "title"
     t.text "description"
-    t.integer "quantity"
+    t.bigint "quantity"
     t.decimal "price"
     t.bigint "order_id"
     t.datetime "created_at", null: false
